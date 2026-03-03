@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFP: SMC 2026 Special Session - 591ax</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://gs.jurieo.com/gemini/fonts-googleapis">
+    <link rel="preconnect" href="https://gs.jurieo.com/gemini/fonts-gstatic" crossorigin>
+    <link href="https://gs.jurieo.com/gemini/fonts-googleapis/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ieee-blue: #002855;
+            --tech-cyan: #00d2ff;
+            --paper-width: 210mm;
+            --paper-height: 297mm;
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+        h1, h2, h3, .title-font { font-family: 'Space Grotesk', sans-serif; }
+        
+        .flyer-container {
+            width: var(--paper-width);
+            min-height: var(--paper-height);
+            margin: 1rem auto;
+            background: white;
+            padding: 8mm 10mm;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* 极简顶端条 */
+        .top-banner {
+            border-bottom: 2px solid var(--ieee-blue);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #64748b;
+            border-bottom: 1px solid #f1f5f9;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+        }
+
+        .topic-cat {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--ieee-blue);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .topic-cat::after {
+            content: "";
+            flex-grow: 1;
+            height: 1px;
+            background: #f1f5f9;
+        }
+
+        .topic-item {
+            position: relative;
+            padding-left: 12px;
+            font-size: 11px; /* 略微调小一点以容纳更多内容 */
+            line-height: 1.35;
+            color: #334155;
+            margin-bottom: 3px;
+        }
+        .topic-item::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--tech-cyan);
+        }
+
+        .info-card {
+            background: #f8fafc;
+            border-radius: 4px;
+            padding: 12px;
+            border: 1px solid #f1f5f9;
+        }
+
+        .text-orange-600 {
+            --tw-text-opacity: 1;
+            color: rgb(237 120 68 / var(--tw-text-opacity, 1));
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .flyer-container { margin: 0; box-shadow: none; width: 100%; height: 100%; border: none; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body class="py-4">
+
+    <div class="flyer-container">
+        <!-- Compact Header: No redundancy -->
+        <div class="top-banner flex justify-between items-center">
+            <p class="text-[10px] font-bold text-[#002855] tracking-widest uppercase">
+                IEEE SMC 2026 | Special Session Call for Papers
+            </p>
+            <div class="flex items-center gap-4 text-[10px] font-semibold text-slate-500">
+                <span>Oct 4-7, 2026</span>
+                <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
+                <span>Bellevue, WA, USA</span>
+            </div>
+        </div>
+
+        <!-- Session Title: Focused and Clean -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-extrabold text-[#002855] tracking-tighter leading-tight mb-2">
+                Trustworthy and Collaborative <br>
+                <span class="text-orange-600 italic leading-none">Human-Centric Intelligence</span>
+            </h1>
+            <div class="flex items-center gap-4">
+                <p class="text-sm font-medium text-slate-400 uppercase tracking-[0.2em]">Session Code: <span class="text-slate-900 font-bold">591ax</span></p>
+                <div class="flex-grow h-[1px] bg-slate-100"></div>
+            </div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="grid grid-cols-12 gap-10 flex-grow">
+            
+            <!-- Main Content: Aims & Topics -->
+            <div class="col-span-8">
+                <section class="mb-8">
+                    <h2 class="section-title">Aims and Scope</h2>
+                    <div class="text-[12px] text-slate-700 leading-relaxed text-justify space-y-3">
+                        <p>
+                            As AI systems transition from isolated tools to active collaborators, the <strong>"Human-Centric"</strong> paradigm becomes essential. This evolution demands a fundamental shift in how we manage trust, privacy, and alignment. Current centralized models often fail to respect user agency or provide sufficient transparency in heterogeneous environments.
+                        </p>
+                        <p>
+                            This session explores the convergence of <strong>Distributed Intelligence</strong>, <strong>Blockchain-based Trust</strong>, and <strong>Robust Perception</strong>. We aim to foster research on architectures that allow secure collaboration without exposing raw data, and explainable systems that truly align machine reasoning with human intent. We invite contributions addressing both theoretical foundations and real-world industrial or healthcare applications.
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section-title">Comprehensive Topics of Interest</h2>
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-6">
+                        <!-- Category 1 -->
+                        <div>
+                            <h3 class="topic-cat">Foundations & Learning</h3>
+                            <div class="topic-item">Human-Centric AI Architectures</div>
+                            <div class="topic-item">Privacy-Preserving Federated Learning</div>
+                            <div class="topic-item">Heterogeneous Collaborative Learning</div>
+                            <div class="topic-item">Multi-Agent Zero-Shot Coordination</div>
+                            <div class="topic-item">Isomerism Intelligence in Edge-Cloud</div>
+                            <div class="topic-item">Meta-Learning for User Adaptation</div>
+                            <div class="topic-item">Self-Supervised Learning in HRI</div>
+                            <div class="topic-item">Resource-Efficient Distributed AI</div>
+                            <div class="topic-item">Neuro-Symbolic AI for Human Understanding</div>
+                        </div>
+                        <!-- Category 2 -->
+                        <div>
+                            <h3 class="topic-cat">Trust & Security</h3>
+                            <div class="topic-item">Blockchain for Decentralized AI</div>
+                            <div class="topic-item">Robust Defensive AI against Poisoning</div>
+                            <div class="topic-item">LLM Vulnerability & Risk Mitigation</div>
+                            <div class="topic-item">Generative AI Privacy Protection</div>
+                            <div class="topic-item">Verifiable & Cryptographic Trust</div>
+                            <div class="topic-item">Data Governance in Open Environments</div>
+                            <div class="topic-item">Differential Privacy in Large-Scale Systems</div>
+                            <div class="topic-item">Secure Multi-Party Computation (SMPC)</div>
+                            <div class="topic-item">Hallucination Detection & Logic Verification</div>
+                            <div class="topic-item">AI Fairness</div>
+                        </div>
+                        <!-- Category 3 -->
+                        <div>
+                            <h3 class="topic-cat">Human-AI Interaction</h3>
+                            <div class="topic-item">Explainable & Interpretable AI (XAI)</div>
+                            <div class="topic-item">Human-in-the-Loop Optimization</div>
+                            <div class="topic-item">Value Alignment and AI Ethics</div>
+                            <div class="topic-item">Fairness and Bias Mitigation</div>
+                            <div class="topic-item">Human-Robot Collaborative Teaming</div>
+                            <div class="topic-item">Trust Calibration in Human-AI Interaction</div>
+                            <div class="topic-item">Emotional Intelligence & Affective Computing</div>
+                            <div class="topic-item">Adaptive & Privacy-Aware UI/UX</div>
+                            <div class="topic-item">Social Agency and Human-Aligned RL</div>
+                            <div class="topic-item">Personalized Applications & Safety</div>
+                        </div>
+                        <!-- Category 4 -->
+                        <div>
+                            <h3 class="topic-cat">Sensing & Applications</h3>
+                            <div class="topic-item">Robust Contactless Biometrics</div>
+                            <div class="topic-item">Identity Perception in the Metaverse</div>
+                            <div class="topic-item">Trustworthy Healthcare Diagnosis</div>
+                            <div class="topic-item">Smart Supply Chain Knowledge Graphs</div>
+                            <div class="topic-item">Secure Cyber-Physical Systems</div>
+                            <div class="topic-item">Adaptive Recommender Systems</div>
+                            <div class="topic-item">Wearable Sensing for Mental Health</div>
+                            <div class="topic-item">Digital Twins with Blockchain-Anchoring</div>
+                            <div class="topic-item">Intelligent Assistive Technologies</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Side Content: Deadlines & People -->
+            <div class="col-span-4 flex flex-col space-y-9">
+                
+                <!-- Deadline -->
+                <div>
+                    <h2 class="section-title">Critical Deadline</h2>
+                    <div class="bg-red-50 border-l-4 border-red-600 p-4">
+                        <p class="text-[10px] font-bold text-red-600 uppercase mb-1">Paper Submission</p>
+                        <p class="text-2xl font-bold text-slate-900 tracking-tight">March 22, 2026</p>
+                    </div>
+                </div>
+
+                <!-- Submission Instructions -->
+                <div>
+                    <h2 class="section-title">Submission Guide</h2>
+                    <div class="info-card">
+                        <p class="text-[11px] text-slate-600 leading-snug mb-3">
+                            Papers must be submitted via <strong>PaperCept</strong>. Select "Special Session Paper" and use the code:
+                        </p>
+                        <div class="bg-slate-900 text-white text-center py-2 rounded font-mono font-bold text-lg mb-3">
+                            591ax
+                        </div>
+                        <p class="text-[8px] text-slate-400 italic">Submit: <br><a href="https://conf.papercept.net/conferences/scripts/start.pl" class="text-blue-600 font-bold underline">https://conf.papercept.net/conferences/scripts/start.pl</a></p>
+                   
+ </div>
+                </div>
+
+                <!-- Organizing Committee -->
+                <div class="flex-grow">
+                    <h2 class="section-title">Organizers</h2>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="text-[13px] font-bold text-[#002855]">Dr. Zhihao Hao <span class="text-[9px] font-normal text-slate-400 ml-1 italic"></span></p>
+                            <p class="text-[9px] text-slate-500 uppercase leading-tight">Beijing Technology and Business University, China</p>
+                        </div>
+                        <div>
+                            <p class="text-[13px] font-bold text-slate-800">Dr. Bob Zhang</p>
+                            <p class="text-[9px] text-slate-500 uppercase leading-tight">University of Macau, Macau SAR</p>
+                        </div>
+                        <div>
+                            <p class="text-[13px] font-bold text-slate-800">Dr. Dong-Kyu Chae</p>
+                            <p class="text-[9px] text-slate-500 uppercase leading-tight">Hanyang University, South Korea</p>
+                        </div>
+                        <div>
+                            <p class="text-[13px] font-bold text-slate-800">Dr. Jun Dai</p>
+                            <p class="text-[9px] text-slate-500 uppercase leading-tight">Worcester Polytechnic Institute, USA</p>
+                        </div>
+                        <div>
+                            <p class="text-[13px] font-bold text-slate-800">Dr. Yali Du</p>
+                            <p class="text-[9px] text-slate-500 uppercase leading-tight">King's College London, UK</p>
+                        </div>
+                    </div>
+                </div>
+
+            
+
+        <!-- Footer -->
+
+
+
+</body>
+</html>
